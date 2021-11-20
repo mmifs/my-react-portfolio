@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
-import About from './components/About';
 import PortfolioThumbs from './components/PortfolioThumbs';
 import ContactForm from './components/Contact';
-import Resume from './components/Resume';
 import Footer from "./components/simple-react-footer";
 
 
