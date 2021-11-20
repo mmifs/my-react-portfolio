@@ -4,7 +4,6 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Portfolio(props) {
   const { currentCategory } = props;
-  console.log(props);
   return (
     <section>
       <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
