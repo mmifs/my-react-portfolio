@@ -11,9 +11,11 @@ const Modal = ({ onClose, currentPhoto }) => {
         <p>
           {description}
         </p>
-        <p>
-          Click <a href={url}>here</a> to visit the app!
-        </p>
+        {category === 'apps' &&
+          <p>
+            Click <a href={url}>here</a> to visit the app!
+          </p>
+        }
         <button type="button" onClick={onClose}>
           Close this modal
         </button>

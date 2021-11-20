@@ -4,11 +4,14 @@ import About from './components/About';
 import PortfolioThumbs from './components/PortfolioThumbs';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
+import Footer from "./components/simple-react-footer";
 
 
 function App() {
   const [categories] = useState([
+    { name: 'about', description: 'This section is all about me', },
     { name: 'apps', description: 'My best web applications!', },
+    { name: 'resume', description: 'Learn about my previous work experience!', },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -28,13 +31,14 @@ function App() {
         {!contactSelected ? (
           <>
             <PortfolioThumbs currentCategory={currentCategory}></PortfolioThumbs>
-            <About></About>
-            <Resume></Resume>
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }
