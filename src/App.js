@@ -3,13 +3,12 @@ import Nav from './components/Nav';
 import About from './components/About';
 import PortfolioThumbs from './components/PortfolioThumbs';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
+
 
 function App() {
   const [categories] = useState([
-    { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects', },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+    { name: 'apps', description: 'My best web applications!', },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -30,6 +29,7 @@ function App() {
           <>
             <PortfolioThumbs currentCategory={currentCategory}></PortfolioThumbs>
             <About></About>
+            <Resume></Resume>
           </>
         ) : (
           <ContactForm></ContactForm>
