@@ -56,6 +56,12 @@ const PhotoList = ({ category }) => {
       url: 'https://mmifs.github.io/Coming_Soon/',
       caption: 'Check out my resume and CV at the following link: https://mmifs.github.io/Coming_Soon/',
     },
+    {
+      name: 'Virtual Garage',
+      category: 'apps',
+      description: 'The virtual garage is a MERN stack application designed to allow users to sell items online, like an online garage sale. Still a work in progress!',
+      url: 'https://virtual-garage-33333.herokuapp.com/',
+    },
   ]);
 
   const currentPhotos = photos.filter((photo) => photo.category === category);
@@ -67,7 +73,10 @@ const PhotoList = ({ category }) => {
 
   return (
     <div>
-      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
+      {isModalOpen && 
+      <Modal 
+      onClose={toggleModal} 
+      currentPhoto={currentPhoto} />}
         {currentPhotos.map((image, i) => (
           <>
             <h1>{image.name}</h1>
