@@ -43,6 +43,12 @@ const PhotoList = ({ category }) => {
       url: 'https://mmifs.github.io/Coming_Soon/',
     },
     {
+      name: 'Virtual Garage',
+      category: 'apps',
+      description: 'The virtual garage is a MERN stack application designed to allow users to sell items online, like an online garage sale. Still a work in progress!',
+      url: 'https://virtual-garage-33333.herokuapp.com/',
+    },
+    {
       name: 'Who am I?',
       category: 'about',
       description: 'I am a Business Administration graduate from the University of Guelph Humber who is now studying web design with The University of Toronto! I currently work as part of an IT Help Desk supporting internal employees to deal with front end technical issues. I am very interested in video games, music and comedy. I am excited to soon have a certificate from the U of T Web Dev Bootcamp program to move to a more technical role!',
@@ -55,12 +61,6 @@ const PhotoList = ({ category }) => {
       description: 'https://mmifs.github.io/Coming_Soon/',
       url: 'https://mmifs.github.io/Coming_Soon/',
       caption: 'Check out my resume and CV at the following link: https://mmifs.github.io/Coming_Soon/',
-    },
-    {
-      name: 'Virtual Garage',
-      category: 'apps',
-      description: 'The virtual garage is a MERN stack application designed to allow users to sell items online, like an online garage sale. Still a work in progress!',
-      url: 'https://virtual-garage-33333.herokuapp.com/',
     },
   ]);
 
